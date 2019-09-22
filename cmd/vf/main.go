@@ -23,7 +23,7 @@ type CLI struct {
 const (
 	// ExitOK exits successfully
 	ExitOK = iota
-	// ScanError exits unsuccessfully by occuring scanning error
+	// ScanError exits unsuccessfully by occurring scanning error
 	ScanError
 )
 
