@@ -1,0 +1,17 @@
+name: CI
+on: push
+jobs:
+  test:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        go: ["1.11", "1.12"]
+        os: [ubuntu-latest, macOS-latest]
+    steps:
+    - uses: actions/setup-go@master
+      with:
+        go-version: ${{ matrix.go }}
+    - uses: actions/checkout@master
+    - name: go test
+      run: go test -v ./...
