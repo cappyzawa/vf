@@ -1,0 +1,3 @@
+cmd/vf/main.go:11:6: exported type CLI should have comment or be unexported
+cmd/vf/main.go:18:2: exported const ExitOK should have comment (or a comment on this block) or be unexported
+cmd/vf/main.go:22:1: exported method CLI.Run should have comment or be unexported

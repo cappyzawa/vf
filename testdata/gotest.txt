@@ -1,0 +1,11 @@
+=== RUN   TestRun
+=== RUN   TestRun/format_result_of_golint
+=== RUN   TestRun/format_result_of_go_test
+--- FAIL: TestRun (0.00s)
+    --- FAIL: TestRun/format_result_of_golint (0.00s)
+        main_test.go:30: expect 0, but actual is 0
+    --- FAIL: TestRun/format_result_of_go_test (0.00s)
+        main_test.go:30: expect 0, but actual is 0
+FAIL
+FAIL	github.com/cappyzawa/vf/cmd/vf	0.538s
+FAIL
