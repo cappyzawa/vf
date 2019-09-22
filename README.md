@@ -1,4 +1,9 @@
 # vf
+[![Actions Status](https://github.com/cappyzawa/vf/workflows/CI/badge.svg)](https://github.com/cappyzawa/vf/actions)
+[![Go Report Card](https://goreportcard.com/badge/github.com/cappyzawa/vf)](https://goreportcard.com/report/github.com/cappyzawa/vf)
+[![codecov](https://codecov.io/gh/cappyzawa/vf/branch/master/graph/badge.svg)](https://codecov.io/gh/cappyzawa/vf)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 vf is formatter for vim.
 
 ## Install
