@@ -13,7 +13,7 @@ $ go get github.com/cappyzawa/vf/cmd/vf
 
 ## Example
 ```bash
-$ golint ./... | vf
+$ golint ./...
 cmd/vf/main.go:30:1: exported method CLI.Run should have comment or be unexported
 
 # with vf
