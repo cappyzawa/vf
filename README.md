@@ -23,5 +23,5 @@ cmd/vf/main.go+30:1: exported method CLI.Run should have comment or be unexporte
 
 Vim can open a file and jump the line by using `+<num>`.
 ```bash
-$ vim cmd/vf/main.go+30
+$ vim cmd/vf/main.go +30
 ```

@@ -32,7 +32,7 @@ func (c *CLI) Run(args []string) int {
 	sc := bufio.NewScanner(c.reader)
 	for sc.Scan() {
 		if re.MatchString(sc.Text()) {
-			fmt.Fprintln(c.outWriter, strings.Replace(sc.Text(), ":", "+", 1))
+			fmt.Fprintln(c.outWriter, strings.Replace(sc.Text(), ":", " +", 1))
 			continue
 		}
 		fmt.Fprintln(c.outWriter, sc.Text())
