@@ -18,7 +18,7 @@ cmd/vf/main.go:30:1: exported method CLI.Run should have comment or be unexporte
 
 # with vf
 $ golint ./... | vf
-cmd/vf/main.go+30:1: exported method CLI.Run should have comment or be unexported
+cmd/vf/main.go +30:1: exported method CLI.Run should have comment or be unexported
 ```
 
 Vim can open a file and jump the line by using `+<num>`.
