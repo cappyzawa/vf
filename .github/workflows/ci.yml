@@ -2,7 +2,6 @@ name: CI
 on: push
 jobs:
   test:
-    name: "Test"
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
@@ -18,15 +17,14 @@ jobs:
     - uses: Atrox/codecov-action@v0.1.3
       env:
         CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
-  release:
-    name: "Release"
+  tag:
+    name: "Tag"
     needs: [test]
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    - uses: docker://goreleaser/goreleaser
+    - name: Bump version and push tag
+      uses: anothrNick/github-tag-action@master
       env:
         GITHUB_TOKEN: ${{ secrets.TOKEN }}
-      with:
-        args: release
-      if: success()
+        REPO_OWNER: cappyzawa
